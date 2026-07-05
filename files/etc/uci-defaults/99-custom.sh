@@ -20,7 +20,7 @@ if [ ! -f "$SETTINGS_FILE" ]; then
     echo "PPPoE settings file not found. Skipping." >>$LOGFILE
 else
     # 读取pppoe信息($enable_pppoe、$pppoe_account、$pppoe_password)
-    . "$SETTINGS_FILE"
+    。 "$SETTINGS_FILE"
 fi
 
 # 1. 先获取所有物理接口列表
@@ -101,12 +101,12 @@ elif [ "$count" -gt 1 ]; then
     IP_VALUE_FILE="/etc/config/custom_router_ip.txt"
     if [ -f "$IP_VALUE_FILE" ]; then
         CUSTOM_IP=$(cat "$IP_VALUE_FILE")
-        # 用户在UI上设置的路由器后台管理地址
+        # 用户在UI上设置的路由器后台管理地
         uci set network.lan.ipaddr=$CUSTOM_IP
         echo "custom router ip is $CUSTOM_IP" >> $LOGFILE
     else
-        uci set network.lan.ipaddr='192.168.100.1'
-        echo "default router ip is 192.168.100.1" >> $LOGFILE
+        uci set network.lan.ipaddr='192.168.99.77'
+        echo "default router ip is 192.168.99.77" >> $LOGFILE
     fi
 
     # PPPoE设置
