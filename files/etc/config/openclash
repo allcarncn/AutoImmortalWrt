@@ -1,0 +1,484 @@
+config openclash 'config'
+	option proxy_port '7892'
+	option tproxy_port '7895'
+	option mixed_port '7893'
+	option socks_port '7891'
+	option http_port '7890'
+	option dns_port '7874'
+	option enable '1'
+	option update '0'
+	option en_mode 'fake-ip'
+	option auto_update '0'
+	option cn_port '9090'
+	option dashboard_forward_ssl '0'
+	option enable_custom_dns '1'
+	option ipv6_enable '0'
+	option ipv6_dns '1'
+	option enable_custom_clash_rules '1'
+	option core_version 'linux-amd64-v1'
+	option enable_redirect_dns '1'
+	option disable_masq_cache '1'
+	option log_level '0'
+	option proxy_mode 'rule'
+	option intranet_allowed '1'
+	option disable_udp_quic '1'
+	option operation_mode 'fake-ip'
+	option enable_rule_proxy '0'
+	option redirect_dns '1'
+	option cachesize_dns '1'
+	option filter_aaaa_dns '1'
+	option small_flash_memory '0'
+	option interface_name '0'
+	option log_size '1024'
+	option tolerance '0'
+	option store_fakeip '0'
+	option custom_fallback_filter '0'
+	option custom_fakeip_filter '0'
+	option custom_host '0'
+	option custom_name_policy '0'
+	option append_wan_dns '0'
+	option stream_auto_select '0'
+	option bypass_gateway_compatible '0'
+	option github_address_mod '0'
+	option urltest_address_mod '0'
+	option urltest_interval_mod '0'
+	option delay_start '0'
+	option router_self_proxy '1'
+	option release_branch 'master'
+	option smart_enable '0'
+	option dashboard_type 'Meta'
+	option yacd_type 'Official'
+	option append_default_dns '0'
+	option enable_respect_rules '0'
+	option chnr_custom_url 'https://ispip.clang.cn/all_cn.txt'
+	option chnr6_custom_url 'https://ispip.clang.cn/all_cn_ipv6.txt'
+	option dashboard_password 'z1hr6Tgf'
+	option default_resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
+	option disable_quic_go_gso '1'
+	option default_dashboard 'yacd'
+	option fakeip_range '0'
+	option custom_proxy_server_policy '0'
+	option enable_tcp_concurrent '1'
+	option enable_unified_delay '1'
+	option global_ua '0'
+	option find_process_mode '0'
+	option geodata_loader '0'
+	option enable_geoip_dat '0'
+	option enable_meta_sniffer '1'
+	option enable_meta_sniffer_pure_ip '1'
+	option enable_meta_sniffer_custom '0'
+	option auto_smart_switch '0'
+	option smart_prefer_asn '0'
+	option smart_enable_lgbm '0'
+	option smart_collect '0'
+	option lgbm_auto_update '0'
+	option skip_proxy_address '1'
+	option china_ip_route '1'
+	option lan_interface_name '0'
+	option geo_auto_update '1'
+	option geoip_auto_update '1'
+	option geosite_auto_update '1'
+	option geoasn_auto_update '1'
+	option chnr_auto_update '1'
+	option chnr_update_week_time '1'
+	option chnr_update_day_time '3'
+	option auto_restart '0'
+	option auto_restart_week_time '1'
+	option auto_restart_day_time '0'
+	option fakeip_range6 '0'
+	option geo_update_week_time '1'
+	option geo_update_day_time '2'
+	option geo_custom_url 'https://testingcf.jsdelivr.net/gh/alecthw/mmdb_china_ip_list@release/lite/Country.mmdb'
+	option geoip_update_week_time '1'
+	option geoip_update_day_time '2'
+	option geoip_custom_url 'https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat'
+	option geosite_update_week_time '1'
+	option geosite_update_day_time '2'
+	option geosite_custom_url 'https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat'
+	option geoasn_update_week_time '1'
+	option geoasn_update_day_time '2'
+	option geoasn_custom_url 'https://testingcf.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb'
+	option config_path '/etc/openclash/config/fq_cneupa_dpdns.yaml'
+	option core_type 'Meta'
+	option dnsmasq_noresolv '0'
+	option enable_udp_proxy '1'
+	option enable_custom_domain_dns_server '0'
+	option dnsmasq_resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
+	option dnsmasq_cachesize '0'
+
+config dns_servers
+	option type 'udp'
+	option ip '127.0.0.1'
+	option enabled '0'
+	option group 'default'
+	option disable_ipv6 '0'
+	option port '5335'
+
+config dns_servers
+	option type 'udp'
+	option ip '119.29.29.29'
+	option enabled '0'
+	option group 'default'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '127.0.0.1'
+	option enabled '0'
+	option disable_ipv6 '0'
+	option port '5335'
+
+config dns_servers
+	option type 'udp'
+	option ip '223.5.5.5'
+	option enabled '0'
+	option group 'default'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '119.29.29.29'
+	option enabled '0'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '119.28.28.28'
+	option enabled '0'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '223.5.5.5'
+	option enabled '0'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option type 'https'
+	option ip 'doh.pub/dns-query'
+	option group 'nameserver'
+	option enabled '0'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option type 'https'
+	option ip 'dns.alidns.com/dns-query'
+	option group 'nameserver'
+	option enabled '0'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '127.0.0.1'
+	option type 'udp'
+	option disable_ipv6 '0'
+	option port '5335'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '149.112.112.112'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2620:fe::fe'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2620:fe::9'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '8.8.8.8'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '8.8.4.4'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2001:4860:4860::8888'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2001:4860:4860::8844'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2001:da8::666'
+	option type 'udp'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.quad9.net'
+	option type 'tls'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.google'
+	option type 'tls'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '1.1.1.1'
+	option type 'tls'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'jp.tiar.app'
+	option type 'tls'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dot.tiar.app'
+	option type 'tls'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.quad9.net/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.google/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.cloudflare.com/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '1.1.1.1/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'public.dns.iij.jp/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'jp.tiar.app/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'jp.tiarap.org/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option type 'https'
+	option ip 'doh.dnslify.com/dns-query'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.twnic.tw/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.oszx.co/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'doh.applied-privacy.net/query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dnsforge.de/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'doh.ffmuc.net/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'doh.mullvad.net/dns-query'
+	option type 'https'
+	option disable_ipv6 '0'
+
+config config_overwrite
+	option name 'default'
+	option enable '0'
+	option url 'https://raw.githubusercontent.com/vernesong/OpenClash/refs/heads/dev/luci-app-openclash/root/etc/openclash/overwrite/default'
+	option update_days 'off'
+	option update_hour 'off'
+	option type 'http'
+	option order '1'
+
+config authentication
+	option enabled '1'
+	option username 'Clash'
+	option password '1luwUXXp'
+
+config config_subscribe
+	option enabled '1'
+	option name 'Smart'
+	option address 'https://app.mitce.net/?sid=93949&token=e076890042922f0bd8e3
+tuic://dbaf3993-b05a-4e39-9104-f650dff9ed66:dbaf3993-b05a-4e39-9104-f650dff9ed66@178.157.57.65:11092?sni=www.bing.com&alpn=h3&congestion_control=bbr&udp_relay_mode=native&allowinsecure=1#Bandwagon
+tuic://1a3c0806-f6b9-4da4-8643-0204c5e13724:1a3c0806-f6b9-4da4-8643-0204c5e13724@23.254.185.225:59690?sni=www.bing.com&alpn=h3&congestion_control=bbr&udp_relay_mode=native&allowinsecure=1#Racknerd
+tuic://9c7733ab-ae90-4d4a-89fd-02186478a411:9c7733ab-ae90-4d4a-89fd-02186478a411@107.161.92.186:22679?sni=www.bing.com&alpn=h3&congestion_control=bbr&udp_relay_mode=native&allowinsecure=1#Nerdrack
+tuic://282b532c-1b0a-4496-88fd-a232e5eb5631:282b532c-1b0a-4496-88fd-a232e5eb5631@104.168.95.20:55316?sni=www.bing.com&alpn=h3&congestion_control=bbr&udp_relay_mode=native&allowinsecure=1#racknerd
+tuic://fdfd588a-2e6d-4775-b7b8-af8e960773d0:fdfd588a-2e6d-4775-b7b8-af8e960773d0@173.254.217.254:34728?sni=www.bing.com&alpn=h3&congestion_control=bbr&udp_relay_mode=native&allowinsecure=1#nerdrack
+tuic://3f04c141-c817-406f-b025-6c8aaffee808:3f04c141-c817-406f-b025-6c8aaffee808@38.49.45.91:45756?sni=www.bing.com&alpn=h3&congestion_control=bbr&udp_relay_mode=native&allowinsecure=1#Premium
+hysteria2://dbaf3993-b05a-4e39-9104-f650dff9ed66@178.157.57.65:32372?sni=www.bing.com&insecure=1#Bandwagon
+hysteria2://1a3c0806-f6b9-4da4-8643-0204c5e13724@23.254.185.225:38928?sni=www.bing.com&insecure=1#Racknerd
+hysteria2://9c7733ab-ae90-4d4a-89fd-02186478a411@107.161.92.186:32167?sni=www.bing.com&insecure=1#Nerdrack
+hysteria2://282b532c-1b0a-4496-88fd-a232e5eb5631@104.168.95.20:44085?sni=www.bing.com&insecure=1#racknerd
+hysteria2://fdfd588a-2e6d-4775-b7b8-af8e960773d0@173.254.217.254:24783?sni=www.bing.com&insecure=1#nerdrack
+hysteria2://3f04c141-c817-406f-b025-6c8aaffee808@38.49.45.91:27146?sni=www.bing.com&insecure=1#Premium
+vless://76884ebf-a0de-4a08-b83b-d50e555597dc@108.162.198.84:2053?host=fq.cneupa.dpdns.org&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=fq.cneupa.dpdns.org&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://fa4c9b07-480c-40e6-92a5-82515b80501b@162.159.45.76:2096?host=cajd-2ra.pages.dev&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cajd-2ra.pages.dev&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://fa4c9b07-480c-40e6-92a5-82515b80501b@162.159.39.147:8443?host=cajd-2ra.pages.dev&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cajd-2ra.pages.dev&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://fa4c9b07-480c-40e6-92a5-82515b80501b@108.162.198.132:2083?host=cajd-2ra.pages.dev&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cajd-2ra.pages.dev&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://76884ebf-a0de-4a08-b83b-d50e555597dc@108.162.198.197:2083?host=fq.cneupa.dpdns.org&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=fq.cneupa.dpdns.org&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://e1d9f2be-a9f1-45e2-9e2c-92186c303907@108.162.198.16:2096?host=cf.996161.xyz&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cf.996161.xyz&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://18b301f5-aee8-44a8-8b27-2ec4b15f1b87@108.162.198.160:2053?host=cf.cneupa.top&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cf.cneupa.top&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://18b301f5-aee8-44a8-8b27-2ec4b15f1b87@108.162.198.15:2087?host=cf.cneupa.top&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cf.cneupa.top&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://18b301f5-aee8-44a8-8b27-2ec4b15f1b87@108.162.198.241:443?host=cf.cneupa.top&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cf.cneupa.top&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://18b301f5-aee8-44a8-8b27-2ec4b15f1b87@108.162.198.160:2053?host=cf.cneupa.top&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=cf.cneupa.top&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://33cb733f-8ff1-4681-8de2-d75b0d521c85@162.159.45.78:2087?host=amoy.996060.xyz&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=amoy.996060.xyz&allowinsecure=1#CF%E7%94%B5%E4%BF%A1%E4%BC%98%E9%80%89
+vless://33cb733f-8ff1-4681-8de2-d75b0d521c85@162.159.38.130:2053?host=amoy.996060.xyz&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=amoy.996060.xyz&allowinsecure=1#CF%E7%94%B5%E4%BF%A1%E4%BC%98%E9%80%89
+vless://33cb733f-8ff1-4681-8de2-d75b0d521c85@162.159.39.30:443?host=amoy.996060.xyz&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=amoy.996060.xyz&allowinsecure=1#CF%E7%94%B5%E4%BF%A1%E4%BC%98%E9%80%89
+vless://daa5b5a6-3303-44b4-a829-e24ab1d532d2@162.159.44.174:2083?host=eupa.996060.xyz&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=eupa.996060.xyz&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89
+vless://daa5b5a6-3303-44b4-a829-e24ab1d532d2@108.162.198.104:2096?host=eupa.996060.xyz&path=%2F&type=ws&encryption=none&security=tls&alpn=default&sni=eupa.996060.xyz&allowinsecure=1#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89'
+	option sub_ua 'Clash'
+	option sub_convert '1'
+	option convert_address 'http://192.168.99.77:25500/sub'
+	option template '0'
+	option custom_template_url 'https://raw.githubusercontent.com/allcarncn/edgetunnel/refs/heads/main/ACL4SSR_Online_Mini_MultiMode_CF.ini'
+	option emoji 'true'
+	option udp 'true'
+	option skip_cert_verify 'true'
+	option sort 'true'
+	option node_type 'true'
+	option rule_provider 'true'
+	option de_ex_keyword '到期 流量 套餐 官网'
+
+config subscribe_info
+	option name 'Subscribe'
+	list url 'https://162.19.79.201/s/c6305ce4dca9eb88e9f87e8a07a47958'
+
+config config_subscribe
+	option name 'app_mitce'
+	option address 'https://app.mitce.net/?sid=93949&token=e076890042922f0bd8e3'
+	option sub_ua 'clash.meta/1.19.20'
+	option sub_convert '0'
+	option emoji 'false'
+	option udp 'false'
+	option skip_cert_verify 'false'
+	option sort 'false'
+	option node_type 'false'
+	option rule_provider 'false'
+	option enabled '1'
+
+config config_subscribe
+	option name 'CrossWall'
+	option address 'https://162.19.79.201/s/c6305ce4dca9eb88e9f87e8a07a47958'
+	option sub_ua 'clash.meta/1.19.20'
+	option sub_convert '0'
+	option emoji 'false'
+	option udp 'false'
+	option skip_cert_verify 'false'
+	option sort 'false'
+	option node_type 'false'
+	option rule_provider 'false'
+	option enabled '1'
+
+config config_subscribe
+	option name 'fq_cneupa_dpdns'
+	option address 'https://fq.cneupa.dpdns.org/sub?token=d23a48035dfa9893d7ad97279702ecef'
+	option sub_ua 'clash.meta/1.19.20'
+	option sub_convert '0'
+	option emoji 'false'
+	option udp 'false'
+	option skip_cert_verify 'false'
+	option sort 'false'
+	option node_type 'false'
+	option rule_provider 'false'
+	option enabled '1'
+
+config config_subscribe
+	option name 'eupa_ccwu'
+	option address 'https://eupa.ccwu.cc/sub?token=e9bdfd2b47386d7ed8a9068b9bc26834'
+	option sub_ua 'clash.meta/1.19.20'
+	option sub_convert '0'
+	option emoji 'false'
+	option udp 'false'
+	option skip_cert_verify 'false'
+	option sort 'false'
+	option node_type 'false'
+	option rule_provider 'false'
+	option enabled '1'
+
